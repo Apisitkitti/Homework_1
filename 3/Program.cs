@@ -14,23 +14,23 @@ class Program
         if(input >-1 && input<=0)
         {
             sol = 1-Math.Pow(input,2);
-            ans = Cal(Math.Sqrt(sol));
+            ans = Math.Sqrt(sol);
             return ans;
         }
         if(input >0 && input<=1)
         {
             sol = 1-Math.Pow(input,2);
-            ans = Cal(-1*Math.Sqrt(sol));
+            ans = -1*Math.Sqrt(sol);
             return ans; 
         }
         if(input <= -1)
         {
-            ans = input+2;
+            ans = Cal(input+2);
             return ans;
         }
         else
         {
-            ans = input-2;
+            ans = Cal(input-2);
             return ans;
         }
     }
