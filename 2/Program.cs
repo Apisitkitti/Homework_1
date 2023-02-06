@@ -33,7 +33,8 @@ class Program
        Console.WriteLine(YC);
        Console.WriteLine(XP);
        Console.WriteLine(YP);
-       Console.WriteLine(radian);
+       
+      
        
     }
     
