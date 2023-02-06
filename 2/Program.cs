@@ -24,15 +24,16 @@ class Program
        {
         NewXC = XC;
         NewYC = YC;
-         XC = XC+(distance/(2*i))*Math.Cos(radian+(radian*2*i));
-         YC = YC+(distance/(2*i))*Math.Sin(radian+(radian*2*i));
-         XP = NewXC+(distance/(Math.Pow(2,i-1)))*Math.Cos(radian+(radian*2*i));
-         YP = NewYC+(distance/(Math.Pow(2,i-1)))*Math.Sin(radian+(radian*2*i));
+         XC = XC+(distance/(2*i))*Math.Cos(radian+((Math.PI/2)*i));
+         YC = YC+(distance/(2*i))*Math.Sin(radian+((Math.PI/2)*i));
+         XP = NewXC+(distance/(Math.Pow(2,i-1)))*Math.Cos(radian+((Math.PI/2)*i));
+         YP = NewYC+(distance/(Math.Pow(2,i-1)))*Math.Sin(radian+((Math.PI/2)*i));
        }
        Console.WriteLine(XC);
        Console.WriteLine(YC);
        Console.WriteLine(XP);
        Console.WriteLine(YP);
+       
     }
     
 }
